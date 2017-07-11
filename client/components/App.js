@@ -1,13 +1,12 @@
 import React from 'react';
 
 import Header from './Header';
-import BinList from './bins/BinList';
 
-export default () => {
+export default (props) => {
   return (
     <div>
     <Header/>
-    <BinList/>
+    {props.children}
   </div>
   );
 }
